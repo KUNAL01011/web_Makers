@@ -16,10 +16,9 @@ function SearchBar() {
   )
 }
 const Container = styled.div`
-  width: 100%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 198px;
-  padding: 0px 212px 0px 212px;
+  padding: 0px 238px 0px 216px;
   h1{
     margin-top: 40px;
   }

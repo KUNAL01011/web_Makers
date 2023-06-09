@@ -9,20 +9,19 @@ function Sidebar() {
     <Container>
      <Box>
         <SearchSharpIcon/>
-        <h3>Explore</h3>
+        <h3>Web dev</h3>
      </Box>
      <Box>
         <AddRoadSharpIcon/>
-        <h3>Roadmap</h3>
+        <h3>App dev</h3>
      </Box>
      <Box>
         <TurnSharpRightSharpIcon/>
-        <h3>Personalized</h3>
-        <span>Path</span>
+        <h3>DSA</h3>
      </Box>
      <Box>
         <ModeStandbySharpIcon/>
-        <h3>Asingment</h3>
+        <h3>Roadmap</h3>
      </Box>
      <Box>
         <AccountTreeSharpIcon/>
@@ -33,14 +32,18 @@ function Sidebar() {
 }
 
 const Container = styled.div`
-    background-color: #eeeeee;
+    /* background-color: #eeeeee;
     position: sticky;
-    top: 88px;
+    top: 89px;
     left: 0;
-    height: 87vh;
-
-    
-
+    height: 88vh;
+    width: 8%; */
+    background-color: #eeeeee;
+    position: fixed;
+    top: 88px;
+    left: 0px;
+    width: 8%;
+    height: 88vh;
 `
 const Box = styled.div`
     display: flex;
@@ -48,13 +51,12 @@ const Box = styled.div`
     justify-content: center;
     align-items: center;
     padding: 20px;
-    /* border: 1px solid black; */
     border-bottom: 1px solid gray;
     color: black;
     h3{
         margin: 0;
         font-weight: 400;
-        padding: 5px;
+        padding: 4px;
     }
 `
 export default Sidebar
