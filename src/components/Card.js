@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import Img1 from "../assest/images/cardsimg1.png"
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-function Card() {
+function Card({src,heading,subtitle,name}) {
   return (
     <Container>
       <ContantWarrper>
@@ -9,7 +9,7 @@ function Card() {
       <p>Become a Front End Developer</p>
       <span><p>Go from complete beginner to creating interactive websites using HTML, CSS, and JavaScript.</p></span>
       <Wrraper>
-        <p>4 Modules</p>
+        <p>Learn</p>
         <span>
         <Wrraper1>
             Pythan
@@ -40,6 +40,7 @@ const ContantWarrper = styled.div`
 
   }
   p{
+    
     padding-left: 15px;
     padding-bottom: 15px;
     display: inline-block;
@@ -59,10 +60,12 @@ const Wrraper = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 30px 15px 30px 15px;
-  P{
+  >P{
+    border : 1px solid black;
     margin: 0;
     padding-top: 5px;
     padding-bottom: 5px;
+    padding-right: 20px;
   }
   span{
         border: 1px solid grey;

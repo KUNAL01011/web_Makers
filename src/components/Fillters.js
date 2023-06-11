@@ -47,7 +47,6 @@ const Container = styled.div`
 
 const FilterButton = styled.div`
 span{
-  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
   align-items: center;

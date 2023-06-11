@@ -16,7 +16,6 @@ function SearchBar() {
   )
 }
 const Container = styled.div`
-  /* border: 1px solid black; */
   height: 198px;
   padding: 0px 238px 0px 216px;
   h1{
@@ -48,7 +47,5 @@ const Button = styled.div`
       color: white;
       font-size: 1rem;
     }
-    
-  
 `
 export default SearchBar

@@ -1,14 +1,13 @@
-// import Home from "./pages/Home";
-import Courses from "./pages/Courses";
-// import Comp from "./pages/Comp";
+// import Courses from "./pages/Courses";
+import Video from "./pages/Video";
+
 
 function App() {
 
   return (
     <div className="App">
-      {/* <Home/> */}
-      <Courses/>
-      {/* <Comp></Comp> */}
+      
+      <Video/>
     </div>
   );
 }

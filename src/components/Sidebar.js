@@ -9,15 +9,15 @@ function Sidebar() {
     <Container>
      <Box>
         <SearchSharpIcon/>
-        <h3>Web dev</h3>
+        <h3>Explore</h3>
      </Box>
      <Box>
         <AddRoadSharpIcon/>
-        <h3>App dev</h3>
+        <h3>MySpace</h3>
      </Box>
      <Box>
         <TurnSharpRightSharpIcon/>
-        <h3>DSA</h3>
+        <h3>Assignment</h3>
      </Box>
      <Box>
         <ModeStandbySharpIcon/>
@@ -32,12 +32,6 @@ function Sidebar() {
 }
 
 const Container = styled.div`
-    /* background-color: #eeeeee;
-    position: sticky;
-    top: 89px;
-    left: 0;
-    height: 88vh;
-    width: 8%; */
     background-color: #eeeeee;
     position: fixed;
     top: 88px;
