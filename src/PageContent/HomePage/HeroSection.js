@@ -1,18 +1,19 @@
 import styled from "styled-components"
 import { useTypewriter,Cursor } from 'react-simple-typewriter'
 import Image from '../../assest/images/ALPHA 3D 2.png'
+import heroData from "../../Data/HeroData"
 
 function HeroSection() {
     const [text] = useTypewriter({
-        words: ['Ansh', 'Sexena'],
+        words: ['Kunal', 'Kumar'],
         loop: {},
     })
   return (
     <Container>
           <HeroTextSection>
             <Text>Learn with <span>{text}</span><Cursor /></Text> 
-            <h3>Start Where You're, We'll Take You Where You Want To Go !</h3>
-            <p>"YOUR GROWTH. OUR PASSION"</p>
+            <h3>{heroData.desc}</h3>
+            <p>{heroData.slogan}</p>
           </HeroTextSection>
           <HeroImgSection>
             <img src={Image} alt="" />

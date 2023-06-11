@@ -1,25 +1,28 @@
 import styled from "styled-components"
 import logo from "../assest/images/logo.png"
+import { Link } from "react-router-dom"
 
 
 function Header() {
   return (
     <Container>
       <Logo>
+        <Link to= '/'>
         <img src={logo} alt="logo" />
+        </Link>
       </Logo>
       <Menu>
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Couress</li>
-            <li>Contect us</li>
+            <li><Link to= "/">Home</Link></li>
+            <li><Link to= "/about">About</Link></li>
+            <li><Link to= "/courses">Courses</Link></li>
+            <li><Link to= "/contact">Contact us</Link></li>
         </ul>
       </Menu>
       <Join>
         <ul>
-            <li>Login</li>
-            <li>Singn Up</li>
+            <li><Link to= '/signin'>Login </Link></li>     
+            <li><Link to= '/register'>Singn Up</Link></li>
         </ul>
       </Join>
     </Container>

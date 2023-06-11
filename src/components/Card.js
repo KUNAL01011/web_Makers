@@ -1,24 +1,30 @@
 import styled from "styled-components"
-import Img1 from "../assest/images/cardsimg1.png"
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-function Card({src,heading,subtitle,name}) {
-  return (
-    <Container>
-      <ContantWarrper>
-      <img src={Img1} alt="" />
-      <p>Become a Front End Developer</p>
-      <span><p>Go from complete beginner to creating interactive websites using HTML, CSS, and JavaScript.</p></span>
-      <Wrraper>
-        <p>Learn</p>
-        <span>
-        <Wrraper1>
-            Pythan
-            <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
-        </Wrraper1>
-      </span>
-      </Wrraper>
-      </ContantWarrper>
+import { Link , useNavigate } from "react-router-dom"
 
+
+
+function Card({src, heading, subtitle,url}) {
+
+  const navigate = useNavigate();
+  function handlClick(e){
+    e.stopPropagation();
+    navigate("/courses/singlevideo")
+  }
+  return (
+    <Container onClick={()=>{
+      navigate("/courses/singlevideo")
+    }}>
+      <ContantWarrper>
+        <img src={src} alt="" />
+        <p>{heading}</p>
+        <span><p>{subtitle}</p></span>
+        <Wrraper>
+          <p onClick={handlClick}><Link>Learn</Link></p>
+          <span onClick={(e)=>{
+            e.stopPropagation();
+          }}><Link to={url}>Play</Link></span>
+        </Wrraper>
+      </ContantWarrper>
     </Container>
   )
 }
@@ -73,9 +79,6 @@ const Wrraper = styled.div`
         padding: 7px 13px;
     }
 
-`
-const Wrraper1 = styled.div`
-  display: flex;
 `
 export default Card
 
