@@ -4,12 +4,18 @@ import Amazon from '../../assest/images/kisspng_amazon_com_logo_retail_brand_pub
 import Google from '../../assest/images/pngegg_1_1_51b5432954.png'
 import Microsoft from '../../assest/images/microsoft_logo_png_2398_1_6587a84ffc.png'
 
+import { useNavigate } from "react-router-dom"
+
 function InstructorSection() {
+  const navigate = useNavigate();
+  function handlClick(e){
+    navigate('/about')
+  }
   return (
     <Container>
       <TextSection>
         <h1>Meet your <span>Instructor</span></h1>
-        <button>Kwon More</button>
+        <button onClick={handlClick}>Kwon More</button>
       </TextSection>
       <hr />
 

@@ -37,6 +37,7 @@ const Container = styled.div`
     padding: 50px 238px 50px 216px;
     gap: 37px;
     span{
+        cursor: pointer;
         border: 1px solid grey;
         border-radius: 24px;
         font-size: 1rem;

@@ -34,6 +34,7 @@ const Container = styled.div`
     height: fit-content;
     padding: 0px 0px 0px 0px;
     flex-direction: column;
+    cursor: pointer;
 `
 const ContantWarrper = styled.div`
   display: flex;

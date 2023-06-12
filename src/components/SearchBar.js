@@ -32,6 +32,7 @@ const Wrraper = styled.div`
     
 `
 const Button = styled.div`
+    cursor: pointer;
     display: flex;
     border: 1px solid black;
     background-color: #5553ff;
@@ -40,6 +41,7 @@ const Button = styled.div`
     padding-left: 10px;
     color: white;
     button{
+      cursor: pointer;
       border: none;
       outline: none;
       background-color: white;

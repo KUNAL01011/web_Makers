@@ -40,6 +40,7 @@ const Container = styled.div`
     height: 88vh;
 `
 const Box = styled.div`
+   cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;

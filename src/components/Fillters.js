@@ -46,16 +46,18 @@ const Container = styled.div`
 `
 
 const FilterButton = styled.div`
+cursor: pointer;
 span{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 192px;
   height: 37px;
-
+  
 }
 
 button{
+  cursor: pointer;
   border: none;
   outline: none;
   background: transparent;
